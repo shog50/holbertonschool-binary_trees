@@ -13,6 +13,10 @@ size_t left_height, right_height;
 if (tree == NULL)
 return (0);
 
+/* A single node has height 0 */
+if (tree->left == NULL && tree->right == NULL)
+return (0);
+
 /* Measure the height of the left and right subtrees */
 left_height = binary_tree_height(tree->left);
 right_height = binary_tree_height(tree->right);
