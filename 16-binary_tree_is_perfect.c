@@ -16,7 +16,7 @@ return (0);
 left = binary_tree_height(tree->left);
 right = binary_tree_height(tree->right);
 
-return ((left > right ? left : right) + 1);
+return ((left > right ? left : right) +1);
 }
 
 /**
@@ -45,7 +45,7 @@ if (tree == NULL)
 return (0);
 
 height = binary_tree_height(tree);
-expected_nodes = (1 << height) - 1;
+expected_nodes = (1 << height) -1;
 
 return (binary_tree_size(tree) == expected_nodes);
 }
