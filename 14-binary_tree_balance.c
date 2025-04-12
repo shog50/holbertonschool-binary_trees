@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * tree_height - measures the height of a binary tree
  * @tree: pointer to the node
@@ -16,7 +15,7 @@ return (0);
 left = tree_height(tree->left);
 right = tree_height(tree->right);
 
-return ((left > right ? left : right) + 1);
+return ((left > right ? left : right) +1);
 }
 
 /**
